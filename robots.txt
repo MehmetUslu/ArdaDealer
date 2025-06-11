@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
+Disallow: /images/
+Disallow: /*.css$
+Disallow: /*.js$
 
-Sitemap: https://www.yourdomain.com/sitemap.xml
+# Allow Google Images to index images
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Allow Google Mobile to index everything
+User-agent: Googlebot-Mobile
+Allow: /
+
+Sitemap: https://www.ardatekel.com/sitemap.xml
