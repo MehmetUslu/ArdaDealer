@@ -1,0 +1,740 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Header Styles */
+header {
+    background-color: white !important;
+    color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 0.85rem;
+    padding: 5px 8px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #4361ee;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-button, .whatsapp-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.phone-button {
+    background-color: #4361ee;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+.phone-button:hover, .whatsapp-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phone-button i, .whatsapp-button i {
+    margin-right: 5px;
+    font-size: 1.1rem;
+}
+
+/* Hero Banner Section */
+.hero-banner {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #2b1d0e;
+}
+
+.full-width-image {
+    width: 100%;
+    max-width: 800px;
+    display: inline-block;
+    line-height: 0;
+    margin: 0 auto;
+}
+
+.full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e0a800;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c69500;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+}
+
+/* Delivery Service Section */
+.delivery-service {
+    padding: 60px 0;
+    background-color: #f0f0f0;
+}
+
+.delivery-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.delivery-image {
+    flex: 1;
+    text-align: center;
+}
+
+.delivery-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.delivery-text {
+    flex: 1;
+}
+
+.delivery-text h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.delivery-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.delivery-cta {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-secondary {
+    background-color: #4CAF50;
+}
+
+.btn-secondary:hover {
+    background-color: #3e8e41;
+}
+
+/* Service Features Section */
+.service-features {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    margin-bottom: 20px;
+}
+
+.feature-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.feature h3 {
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.feature p {
+    margin: 0;
+    color: #666;
+}
+
+/* Payment Info Section */
+.payment-info {
+    padding: 60px 0;
+    background-color: #f0f0f0;
+}
+
+.payment-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.payment-image {
+    flex: 1;
+    text-align: center;
+}
+
+.payment-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.payment-text {
+    flex: 1;
+}
+
+.payment-text h2 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.payment-text p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Service Areas Section */
+.service-areas {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.service-areas-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.areas-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.area-column {
+    flex: 1;
+}
+
+.area-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.area-column li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 25px;
+}
+
+.area-column li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.service-areas-note {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 30px;
+}
+
+/* Products Section */
+.products {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.products::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #4361ee, #3f37c9);
+}
+
+.product-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.category {
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    border: 1px solid #eaeaea;
+}
+
+.category:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.5s ease;
+}
+
+.category:hover img {
+    transform: scale(1.05);
+}
+
+.category h3 {
+    padding: 20px 25px 5px;
+    margin: 0;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.category h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 25px;
+    width: 50px;
+    height: 3px;
+    background-color: #4361ee;
+    border-radius: 2px;
+}
+
+.category p {
+    padding: 15px 25px 30px;
+    margin: 0;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.products .container > h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.products .container > h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #4361ee;
+    border-radius: 2px;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+}
+
+.contact-content {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-info, .map {
+    flex: 1;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.footer-phone, .footer-whatsapp {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.footer-phone {
+    background-color: #4361ee;
+}
+
+.footer-whatsapp {
+    background-color: #25D366;
+}
+
+.footer-phone:hover, .footer-whatsapp:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.footer-phone i, .footer-whatsapp i {
+    margin-right: 8px;
+}
+
+/* Floating Contact Buttons */
+.floating-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.floating-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.floating-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating-btn i {
+    font-size: 24px;
+}
+
+.floating-phone {
+    background-color: #4361ee;
+}
+
+.floating-whatsapp {
+    background-color: #25D366;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about-content, .contact-content, .delivery-content, .payment-content {
+        flex-direction: column;
+    }
+    
+    .about-text, .about-image, .contact-info, .contact-map, .delivery-image, .delivery-text, .payment-image, .payment-text {
+        width: 100%;
+    }
+    
+    .about-image, .delivery-image, .payment-image {
+        margin-top: 0;
+        margin-bottom: 30px;
+        order: -1;
+    }
+    
+    .contact-map {
+        margin-top: 30px;
+    }
+    
+    .features-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .feature {
+        max-width: 100%;
+    }
+    
+    .areas-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .product-categories {
+        justify-content: space-around;
+    }
+    
+    .category {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul li a {
+        font-size: 0.8rem;
+        padding: 5px 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav {
+        margin: 10px 0;
+        width: 100%;
+        order: 3;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-buttons {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .phone-button span, .whatsapp-button span {
+        display: none;
+    }
+    
+    .phone-button, .whatsapp-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .phone-button i, .whatsapp-button i {
+        margin: 0;
+    }
+    
+    .footer-contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .delivery-cta {
+        flex-direction: column;
+    }
+    
+    .service-areas-intro, .service-areas-note {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .category {
+        flex-basis: 100%;
+    }
+    
+    .floating-contact {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .floating-btn {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .payment-text h2 {
+        font-size: 1.5rem;
+    }
+}

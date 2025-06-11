@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Beer mug icon -->
+  <g transform="translate(50, 40) scale(0.8)">
+    <path d="M70,20 L30,20 C25,20 20,25 20,30 L20,120 C20,130 30,140 40,140 L60,140 C70,140 80,130 80,120 L80,30 C80,25 75,20 70,20 Z" fill="#f9c74f" stroke="#333" stroke-width="4"/>
+    <path d="M80,40 L100,40 C110,40 120,50 120,60 L120,70 C120,80 110,90 100,90 L80,90" fill="none" stroke="#333" stroke-width="4"/>
+    <path d="M30,40 L70,40" stroke="white" stroke-width="4"/>
+    <path d="M30,60 L70,60" stroke="white" stroke-width="4"/>
+    <path d="M30,80 L70,80" stroke="white" stroke-width="4"/>
+    <path d="M30,100 L70,100" stroke="white" stroke-width="4"/>
+    <path d="M30,120 L70,120" stroke="white" stroke-width="4"/>
+    <!-- Foam -->
+    <path d="M30,20 C30,10 40,10 45,15 C50,5 65,5 70,15 C75,10 80,15 80,20" fill="white"/>
+  </g>
+</svg>
